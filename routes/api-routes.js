@@ -80,7 +80,6 @@ module.exports = function (app) {
 
   // POST route for saving a new post
   app.post("/api/createExercise", (req, res) => {
-    alert(req.body);
     console.log(req.body.exercise_name);
     db.Exercise.create({
       exercise_name: req.title,
